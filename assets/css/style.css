@@ -5,5 +5,46 @@
 /*placeholder height*/
 #total_score {
     height: 150px;
-    
+    margin-top: 1.5vh;
+    background-color: #073f3b;
+    color: white;
+
+}#total_score_intro {
+    margin-top: 1.5vh;
+    background-color: #073f3b;
+    color: white;
+}
+
+#gems {
+    margin-top: 1vh;
+}
+
+#gem1, #gem2, #gem3, #gem4 {
+    margin: 0 1vw;
+}
+
+#wins_losses {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    background-color: #59aaa5;
+}
+
+#start_number {
+    margin-top: 1vh;
+    background-color: #5cb023;
+}
+
+#instructions {
+    margin-top: 1vh;
+    background-color: #a88472;
+}
+
+body {
+    background-image: url("../images/background_blue.jpg");
+}
+
+#header {
+    background-color: #ad5353;
+    color: white;
+    text-align: center;
 }
