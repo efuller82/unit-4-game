@@ -1,3 +1,9 @@
-.container, .col-md-5, .col-md-7 {
+.container, .col-md-5, .col-md-7, .col-md-4, .col-md-2 {
     border: 1px solid black;
+}
+
+/*placeholder height*/
+#total_score {
+    height: 150px;
+    
 }
