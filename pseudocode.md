@@ -9,11 +9,12 @@
     *** win is added +1 if total score == start number ***
     *** loss is added +1 if total score is > start number ***
 5. #gems 
-    *** random number assigned to each of 4 gems at beginning of game ***
+    *** random number (1-12) assigned to each of 4 gems at beginning of game ***
     *** numbers need to be different than all other gems ***
     *** numbers are to remain hidden from user ***
     *** when clicked, value is added to total score ***
     *** once start number is equaled or exceeded, new random numbers are chosen ***
+    *** crystals, or gems, are displayed as buttons ***
 6. #total_score_intro (complete)
 7. #total_score
     *** begins at 0 ***
