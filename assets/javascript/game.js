@@ -4,6 +4,8 @@ var randomStartingNumber = Math.floor(Math.random() * 101 + 19);
 
 // total score variable to be used later; global scope.
 var totalScore= 0;
+var wins = 0;
+var losses = 0;
 
 // puts random number into div
 document.getElementById("start_number").innerHTML = randomStartingNumber;
@@ -44,4 +46,15 @@ $("img").on("click", function() {
     totalScore += gemValue;
 
     document.getElementById("total_score").innerHTML = totalScore;
+
+    // winning/losing/resetting game
+    if(totalScore === randomStartingNumber){
+        wins++;
+    }
+
+    if(totalScore > randomStartingNumber){
+        losses++;
+    }
 });
+
+
