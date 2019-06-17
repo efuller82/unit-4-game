@@ -1,11 +1,18 @@
-
-// creates random number for start of game
-var randomStartingNumber = Math.floor(Math.random() * 101 + 19);
-
 // total score variable to be used later; global scope.
 var totalScore= 0;
 var wins = 0;
 var losses = 0;
+
+//reset function
+function resetGame() {
+    
+}
+
+
+// creates random number for start of game
+var randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
+
+
 
 // puts random number into div
 document.getElementById("start_number").innerHTML = randomStartingNumber;
@@ -30,7 +37,7 @@ generateGemNum();
         $(this).attr("data-gem", gemNums[index]);
     })
 
-
+    
     // now I want to click on a gem to add its stored number into #total_score div
     // and this is where everything seems to go wrong
 $("img").on("click", function() {
@@ -50,11 +57,25 @@ $("img").on("click", function() {
     // winning/losing/resetting game
     if(totalScore === randomStartingNumber){
         wins++;
+        gemNums.length = 0;
+        generateGemNum();
+        randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
+        document.getElementById("start_number").innerHTML = randomStartingNumber;
+        totalScore = 0;
+        document.getElementById("total_score").innerHTML = totalScore;
     }
 
     if(totalScore > randomStartingNumber){
         losses++;
+        gemNums.length = 0;
+        generateGemNum();
+        randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
+        document.getElementById("start_number").innerHTML = randomStartingNumber;
+        totalScore = 0;
+        document.getElementById("total_score").innerHTML = totalScore;
     }
+    document.getElementById("wins").innerHTML = "Wins: " + wins;
+    document.getElementById("losses").innerHTML = "Losses: " + losses;
 });
 
 
