@@ -3,11 +3,6 @@ var totalScore= 0;
 var wins = 0;
 var losses = 0;
 
-//reset function
-function resetGame() {
-    
-}
-
 
 // creates random number for start of game
 var randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
@@ -57,8 +52,13 @@ $("img").on("click", function() {
     // winning/losing/resetting game
     if(totalScore === randomStartingNumber){
         wins++;
+        alert("Congratulations!!");
         gemNums.length = 0;
         generateGemNum();
+        $("img").each(function (index) {
+            $(this).attr("data-gem", gemNums[index]);
+        })
+        console.log(gemNums);
         randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
         document.getElementById("start_number").innerHTML = randomStartingNumber;
         totalScore = 0;
@@ -67,8 +67,13 @@ $("img").on("click", function() {
 
     if(totalScore > randomStartingNumber){
         losses++;
+        alert("Womp womp wooooooomp!!");
         gemNums.length = 0;
         generateGemNum();
+        $("img").each(function (index) {
+            $(this).attr("data-gem", gemNums[index]);
+        })
+        console.log(gemNums);
         randomStartingNumber =  Math.floor(Math.random() * 101 + 19);
         document.getElementById("start_number").innerHTML = randomStartingNumber;
         totalScore = 0;
