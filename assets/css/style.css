@@ -1,17 +1,16 @@
-.container, .col-md-5, .col-md-7, .col-md-4, .col-md-2 {
-    border: 1px solid black;
-}
+
 
 /*placeholder height*/
 #total_score {
-    height: 150px;
+    height: auto;
     margin-top: 1.5vh;
-    background-color: #073f3b;
     color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 56px;
+    text-align: center;
 
 }#total_score_intro {
     margin-top: 1.5vh;
-    background-color: #073f3b;
     color: white;
 }
 
@@ -26,17 +25,25 @@
 #wins_losses {
     margin-top: 1vh;
     margin-left: 1vw;
-    background-color: #59aaa5;
+    color: white;
+    font-weight: bold;
 }
 
 #start_number {
     margin-top: 1vh;
-    background-color: #5cb023;
+    margin-left: 1vw;
+    background-color: #236cb0;
+    color: #e6f002;
+    font-family: 'Lobster', cursive;
+    font-size: 56px;
+    text-align: center;
 }
 
 #instructions {
     margin-top: 1vh;
-    background-color: #a88472;
+    margin-left: 1vw;
+    background-color: #442270;
+    color: white;
 }
 
 body {
@@ -44,8 +51,11 @@ body {
 }
 
 #header {
-    background-color: #ad5353;
+    background-color: #165969;
     color: white;
     text-align: center;
+    margin-left: 1vw;
 }
+
+
 
