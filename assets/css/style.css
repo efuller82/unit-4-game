@@ -19,7 +19,7 @@
 }
 
 #gem1, #gem2, #gem3, #gem4 {
-    margin: 0 1vw;
+    margin: 0 .8vw;
 }
 
 #wins_losses {
@@ -57,5 +57,8 @@ body {
     margin-left: 1vw;
 }
 
-
+.container {
+    width: 70%;
+    height: 100%;
+}
 
